@@ -21,18 +21,9 @@ struct ContentView: View {
                 .resizable()
                 .frame(width: 100, height: 100)
                 .foregroundStyle(Color(red: red, green: green, blue: blue))
-            HStack {
-                Text("Red:")
-                Slider(value: $red)
-            }
-            HStack {
-                Text("Green:")
-                Slider(value: $green)
-            }
-            HStack {
-                Text("Blue:")
-                Slider(value: $blue)
-            }
+            ColorSliderView(nameColor: "Red", colorValue: $red)
+            ColorSliderView(nameColor: "Green", colorValue: $green)
+            ColorSliderView(nameColor: "Blue", colorValue: $blue)
         }
         .padding()
     }
