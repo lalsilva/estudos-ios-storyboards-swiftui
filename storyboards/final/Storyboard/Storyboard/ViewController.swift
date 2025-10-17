@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         textField.becomeFirstResponder()
+        label.text = ""
     }
     
     @IBAction func buttonWasPressed(_ sender: UIButton) {

@@ -16,35 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcY-D3-hWy">
-                                <rect key="frame" x="34" y="153" width="273" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcY-D3-hWy">
+                                <rect key="frame" x="34" y="153" width="343" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vp5-th-Cev">
-                                <rect key="frame" x="34" y="110" width="103" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vp5-th-Cev">
+                                <rect key="frame" x="34" y="110" width="95" height="35"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="My Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Say Hello"/>
                                 <connections>
                                     <action selector="buttonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOT-5g-eVA"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOf-lM-rPO">
-                                <rect key="frame" x="16" y="68" width="361" height="34"/>
+                                <rect key="frame" x="92" y="68" width="285" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNU-gN-1sp">
+                                <rect key="frame" x="34" y="75" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="iOf-lM-rPO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2Fx-82-SqR"/>
+                            <constraint firstItem="rcY-D3-hWy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="1fe-KS-9pM"/>
+                            <constraint firstItem="vp5-th-Cev" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="EuJ-S3-xGD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rcY-D3-hWy" secondAttribute="trailing" constant="16" id="Jki-y9-avg"/>
+                            <constraint firstItem="hNU-gN-1sp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="WEy-cZ-qg3"/>
+                            <constraint firstItem="hNU-gN-1sp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="ZC9-Uv-UZh"/>
+                            <constraint firstItem="iOf-lM-rPO" firstAttribute="leading" secondItem="hNU-gN-1sp" secondAttribute="trailing" constant="8" symbolic="YES" id="glX-Fs-0NF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iOf-lM-rPO" secondAttribute="trailing" constant="16" id="kf1-b0-UQp"/>
                             <constraint firstItem="iOf-lM-rPO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="oIc-fv-isC"/>
+                            <constraint firstItem="rcY-D3-hWy" firstAttribute="top" secondItem="vp5-th-Cev" secondAttribute="bottom" constant="8" symbolic="YES" id="sWU-Nf-2Xh"/>
+                            <constraint firstItem="vp5-th-Cev" firstAttribute="top" secondItem="iOf-lM-rPO" secondAttribute="bottom" constant="8" symbolic="YES" id="y0p-PS-z9m"/>
                         </constraints>
                     </view>
                     <connections>
