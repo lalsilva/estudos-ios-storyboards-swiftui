@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct ColorSliderView: View {
-    var nameColor = ""
-
     @Binding var colorValue: Double
+    
+    var color: Color
 
     var body: some View {
         HStack {
-            Text((nameColor) + ":")
+            Circle()
+                .frame(width: 25)
+                .foregroundStyle(color)
             Slider(value: $colorValue)
         }
     }
 }
 
-//#Preview {
-//    ColorSliderView()
-//}
+#Preview {
+    ColorSliderView(colorValue: .constant(0.5), color: .green)
+}
